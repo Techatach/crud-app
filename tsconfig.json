@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/prisma/schema.prisma", "src/components/ProductList.tsx", "src/app/products/page.tsx", "src/components/CreatePost.js", "src/lib/mongodb.js", "src/lib/prismadb.js", "src/models/post.js", "src/components/Product.js", "src/app/(auth)/api/[...nextauth]/route.js", "src/app/api/posts/route.js", "src/components/Footer.js", "src/components/Menu.js"],
+  "exclude": ["node_modules"]
+}
